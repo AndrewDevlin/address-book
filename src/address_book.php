@@ -8,7 +8,17 @@ class Contact
     private $city;
     private $state;
     private $zip;
-    
+
+    function __construct($first_name, $last_name, $phone_number, $street, $city, $state, $zip)
+    {
+        $this->first_name = $first_name;
+        $this->last_name = $last_name;
+        $this->phone_number = $phone_number;
+        $this->street = $street;
+        $this->city = $city;
+        $this->state = $state;
+        $this->zip = $zip;
+    }
 }
 
 
