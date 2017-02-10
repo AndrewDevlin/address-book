@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+<head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Address Book</title>
-</html>
+</head>
 <body>
     <div class="container">
         <h1>Address Book</h1>
@@ -46,10 +47,24 @@
 
 
             <div class="col-md-4">
-                <!-- display contacts -->
-                
+                <h3>Your contacts</h3>
+                <ul>
+                    {% for contact in list_of_contacts %}
+                    <li>{{ contact.getNewLastName }}</li>
+                    <li>{{ contact.getNewFirstName }}</li>
+                    <li>{{ contact.getNewPhoneNumber }}</li>
+                    <li>{{ contact.getNewStreet }}</li>
+                    <li>{{ contact.getNewCity }}</li>
+                    <li>{{ contact.getNewState }}</li>
+                    <li>{{ contact.getNewZip }}</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                {% eendfor %}
+
                 <!-- delete button -->
             </div>
         </div>
     </div>
 </body>
+</html>
