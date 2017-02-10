@@ -27,7 +27,7 @@ _This application allows you to create list of contacts, add new contacts to tha
 
 ## Known Bugs
 
-_There are no known present at this time._
+_There are no known bugs at this time._
 
 ## Support and contact details
 

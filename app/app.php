@@ -18,7 +18,7 @@
     $app['debug'] = true;
 
     // when localhost:8000 is searched send to homepage
-    $$app->get('/', function() use ($app) {
+    $app->get('/', function() use ($app) {
         return $app['twig']->render('homepage.html.twig');
     });
 
