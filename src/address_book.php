@@ -89,7 +89,15 @@ class Contact
     {
         return $this->zip;
     }
+
+    function save()
+    {
+        array_push($_SESSION['list_of_contacts'], $this);
+    }
+
+    static function deleteAll()
+    {
+        $_SESSION['list_of_contacts'] = array();
+    }
 }
-
-
 ?>
