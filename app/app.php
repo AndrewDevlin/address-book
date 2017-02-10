@@ -19,7 +19,7 @@
 
     // when localhost:8000 is searched send to homepage
     $app->get('/', function() use ($app) {
-        return $app['twig']->render('homepage.html.twig');
+        return $app['twig']->render('homepage.html.twig', array('list_of_contacts' => $_SESSION['list_of_contacts']));
     });
 
     // instantiate new object and send to confirmation page
