@@ -29,6 +29,11 @@
         return $app['twig']->render('create_contact.html.twig', array('new_contact' => $new_contact));
     });
 
+    // delete all objects and show confirmation page
+    $app->post('/delete_all', function() use ($app) {
+        return $app['twig']->render('delete_contacts.html.twig', array('delete' => Contact::deleteAll()));
+    });
+
 
 
 
