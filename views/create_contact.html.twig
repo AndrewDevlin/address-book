@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>New Contact</title>
+</head>
+<body>
+    <div class="container">
+        <h1>You have created a contact</h1>
+        <ul>
+            <li>{{ new_contact.getNewLastName }}</li>
+            <li>{{ new_contact.getNewFirstName }}</li>
+            <li>{{ new_contact.getNewPhoneNumber }}</li>
+            <li>{{ new_contact.getNewStreet }}</li>
+            <li>{{ new_contact.getNewCity }}</li>
+            <li>{{ new_contact.getNewState }}</li>
+            <li>{{ new_contact.getNewZip }}</li>
+        </ul>
+    </div>
+</body>
+</html>
