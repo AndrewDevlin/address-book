@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Address Book</title>
+</html>
+<body>
+    <div class="container">
+        <h1>Address Book</h1>
+
+        <div class="row">
+            <div class="col-md-8">
+                <form action="/add_contact" method="post">
+                    <h3>Enter a new contact</h3>
+                    <div class="form-group">
+                        <label for="set_first_name">first name</label>
+                        <input id="set_first_name" name="set_first_name" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="set_last_name">last name</label>
+                        <input id="set_last_name" name="set_last_name" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="set_phone_number">phone number</label>
+                        <input id="set_phone_number" name="set_phone_number" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="set_street">street address</label>
+                        <input id="set_street" name="set_street" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="set_city">city</label>
+                        <input id="set_city" name="set_city" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="set_state">state</label>
+                        <input id="set_state" name="set_state" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="set_zip">zip</label>
+                        <input id="set_zip" name="set_zip" class="form-control" type="number">
+                    </div>
+                    <button type="submit" class="btn">add contact</button>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <!-- display contacts -->
+                
+                <!-- delete button -->
+            </div>
+        </div>
+    </div>
+</body>
