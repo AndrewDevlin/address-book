@@ -57,7 +57,7 @@ class Contact
 
     function getNewStreet()
     {
-        return $this->$street;
+        return $this->street;
     }
 
     function setNewCity($new_city)
