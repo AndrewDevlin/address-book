@@ -44,8 +44,8 @@
             </div>
             <div class="col-md-4">
                 <h3>Your contacts</h3>
+                {% for contact in list_of_contacts %}
                 <ul>
-                    {% for contact in list_of_contacts %}
                     <li>{{ contact.getNewLastName }}</li>
                     <li>{{ contact.getNewFirstName }}</li>
                     <li>{{ contact.getNewPhoneNumber }}</li>
@@ -53,8 +53,6 @@
                     <li>{{ contact.getNewCity }}</li>
                     <li>{{ contact.getNewState }}</li>
                     <li>{{ contact.getNewZip }}</li>
-                    <li></li>
-                    <li></li>
                 </ul>
                 {% endfor %}
                 <form action="/delete_all" method="post">
