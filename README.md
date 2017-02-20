@@ -22,10 +22,13 @@ _This application allows you to create list of contacts, add new contacts to tha
 
 ## Setup/Installation Requirements
 
-* _Clone this application_
-* _Download all dependencies found in composer.json_
-* _set up server in web folder_
-* _search for localhost in your browser_
+* See https://secure.php.net/ for details on installing _PHP_.  Note: PHP is typically already installed on Mac.
+* See https://getcomposer.org for details on installing _composer_.
+* Clone project
+* From project root, run > `composer install --prefer-source --no-interaction`
+* To run PHPUnit tests from root > `vendor/bin/phpunit tests`
+* From web folder in project, Start PHP > `php -S localhost:8000`
+* In web browser open `localhost:8000`
 
 ## Known Bugs
 
